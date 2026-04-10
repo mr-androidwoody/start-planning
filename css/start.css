@@ -1,1 +1,112 @@
+/* ========================================
+   Start Page (scoped)
+   ======================================== */
 
+.entry-page .page-content {
+  padding: calc(var(--header-height) + 4px) 28px 56px;
+}
+
+/* Grid */
+.entry-page .setup-grid {
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+/* Card */
+.entry-card {
+  padding: 26px 26px 24px;
+  border-radius: 22px;
+  background: rgba(255,255,255,0.92);
+  border: 1px solid rgba(212,220,232,0.9);
+  box-shadow: 0 12px 28px rgba(18,30,52,0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.entry-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 16px 32px rgba(18,30,52,0.1);
+}
+
+/* Title */
+.entry-title {
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #5c6b85;
+  margin-bottom: 12px;
+}
+
+/* Hero */
+.entry-hero {
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 14px;
+  color: #1f2a40;
+}
+
+/* Sections */
+.entry-section {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.entry-section strong {
+  display: block;
+  font-size: 0.88rem;
+  margin-bottom: 2px;
+}
+
+/* Aside */
+.entry-aside {
+  margin-top: 16px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: #f4f7fc;
+  font-size: 0.82rem;
+  color: #44506a;
+}
+
+/* Tooltip */
+.entry-tooltip {
+  position: relative;
+  border-bottom: 1px dashed rgba(45,91,255,0.5);
+  cursor: help;
+}
+
+.entry-tooltip-box {
+  position: absolute;
+  bottom: 130%;
+  left: 0;
+  width: 260px;
+  background: #1f2a40;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 10px 12px;
+  border-radius: 8px;
+  opacity: 0;
+  transform: translateY(6px);
+  pointer-events: none;
+  transition: all 140ms ease;
+}
+
+.entry-tooltip:hover .entry-tooltip-box {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Footer */
+.entry-footer {
+  margin-top: auto;
+  padding-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.entry-note {
+  font-size: 0.78rem;
+  color: #6b778f;
+}
