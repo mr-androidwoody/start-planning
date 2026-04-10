@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <title>Retirement Planning Tools</title>
 
+  <!-- Core app styles (absolute path - preserved) -->
   <link href="https://mr-androidwoody.github.io/tax-planner/css/styles.css" rel="stylesheet"/>
+
+  <!-- Start page styles -->
   <link href="css/start.css" rel="stylesheet"/>
 </head>
 
@@ -14,19 +18,33 @@
 
 <div class="app entry-page">
 
-  <header class="top-header">
-    <div class="top-header__inner">
-      <div class="title-block">
-        <h1>Retirement Planning Tools</h1>
-        <p>Choose how you want to approach your plan.</p>
+  <!-- Header -->
+    <header class="top-header">
+      <div class="top-header__inner header-with-home">
+    
+        <div class="title-block">
+          <h1>Retirement Planning Tools</h1>
+          <p>Choose how you want to approach your plan.</p>
+        </div>
+    
+        <a href="#" class="home-btn">
+          <span class="home-arrow">←</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+            <path d="M3 11l9-7 9 7"/>
+            <path d="M9 22V12h6v10"/>
+          </svg>
+          Home
+        </a>
+    
       </div>
-    </div>
-  </header>
+    </header>
 
+  <!-- Page -->
   <div class="page-content">
 
     <div id="tab-setup">
 
+      <!-- Intro -->
       <div class="setup-intro-row">
         <div class="setup-intro__text">
           <h1>Select a tool</h1>
@@ -34,6 +52,7 @@
         </div>
       </div>
 
+      <!-- Grid -->
       <div class="setup-grid">
 
         <!-- TAX -->
@@ -91,7 +110,7 @@
               Start here if your priority is tax efficiency.
             </div>
 
-            <a href="https://mr-androidwoody.github.io/tax-planner/" class="btn btn-primary" style="text-decoration:none;">
+            <a href="https://mr-androidwoody.github.io/tax-planner/" class="btn btn-primary">
               Go to tax planner
             </a>
           </div>
@@ -147,7 +166,7 @@
               Start here if your priority is dependable retirement income.
             </div>
 
-            <a href="https://mr-androidwoody.github.io/retirement-income-planner/" class="btn btn-primary" style="text-decoration:none;">
+            <a href="https://mr-androidwoody.github.io/retirement-income-planner/" class="btn btn-primary">
               Go to income planner
             </a>
           </div>
