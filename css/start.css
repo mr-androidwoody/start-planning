@@ -29,6 +29,14 @@
   box-shadow: 0 16px 32px rgba(18,30,52,0.1);
 }
 
+.entry-page a.btn {
+  text-decoration: none;
+}
+
+.entry-page a.btn:hover {
+  text-decoration: none;
+}
+
 /* Title */
 .entry-title {
   font-size: 0.78rem;
